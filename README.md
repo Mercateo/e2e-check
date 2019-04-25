@@ -50,9 +50,9 @@ We try to
 
 - Cypress runs inside the browser, while every other framework runs a Node process.
   - If you need non-browser information (check mails, logs, etc.) in Cypress, you essentially need to start a local Node server which can than be queried for certain informations by your Cypress tests. (E.g. your test can request `localhost:8080/did-i-got-my-email` and the local server will serve you a useful response.)
-- Cypress uses a bundled Eletron version to support testing the same browser in the same version on CI and locally. AFAIK it isn't the only framework where I can't use Puppeteer directly. (Just nice to know - not a real drawback.)
+- Cypress uses a bundled Electron version to support testing the same browser in the same version on CI and locally. AFAIK it isn't the only framework where I can't use Puppeteer directly. (Just nice to know - not a real drawback.)
 - Cypress seems to always offer synchronous APIs, but they actually create an internal queue of asynchronous commands. AFAIK testcafe has some internal queue as well.
-- Cypress and testcase come with their own test runners - no Jest love here 😞
+- Cypress and testcafe come with their own test runners - no Jest love here 😞
 - Cypress creates awesome videos with a nice GUI showing information about your tests out of the box 😍
   - If you would like to see something similar in Puppetter, maybe vote on the [corresponding feature request](https://github.com/GoogleChrome/puppeteer/issues/478). There is the [`puppeteer-recorder` lib](https://www.npmjs.com/package/puppeteer-recorder) which does something similar, but you have no start/stop API and can only say _"record for x seconds"_ which is hard to know beforehand in this case.
 - Cypress also create screenshots from failing tests by default.
