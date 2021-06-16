@@ -1,3 +1,5 @@
+**DEPRECATED** This project is unmantained, deprecated and goes into archive with followup removal in 2 years.
+
 # e2e-check
 
 > A simple overview about current E2E testing solutions for web apps.
